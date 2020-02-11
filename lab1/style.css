@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.container{
+    margin-top: 10vh;
+    padding: 30px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.container:hover{
+    box-shadow:20px 20px 49px 0px rgba(0,0,0,0.3);
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+img{
+    object-fit: cover;
+}
