@@ -5,6 +5,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(238, 238, 238);
+    min-height: 100vh;
 }
 
 .wrap{
@@ -13,12 +14,50 @@ body{
     align-items: center;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(36, 56, 77);
+    transition: .4s;
+}
+
+header p{
+    min-width: 300px;
+    transition: .4s;
+}
+
+header a:hover p{
+    color: rgb(42, 87, 134);
+    transform: scale(1.05);
+}
+
+header img{
+    height: 100px;
+    border-radius: 50%;
+    transition: .4s;
+    margin-left: 10%;
+}
+
+header a:hover img{
+    background-color: rgb(155, 221, 241);
+}
+
 h1{
     font-weight: 100;
     color: rgb(39, 45, 51);
 }
 
-a{
+.wrap a{
     text-align: center;
     text-decoration: none;
     width: 30vw;
@@ -31,7 +70,7 @@ a{
     
 }
 
-a:hover{
+.wrap a:hover{
     box-shadow:20px 20px 49px 0px rgba(0,0,0,0.2);
     border: 1px solid rgb(20, 88, 151);
     color: rgb(71, 89, 255);
