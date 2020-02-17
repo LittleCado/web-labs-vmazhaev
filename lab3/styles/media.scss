@@ -1,0 +1,11 @@
+@media (max-width: 799px){
+    .page .page__content{
+        flex-basis: 60vw;
+    }
+}
+
+@media (max-width: 425px){
+    .page .page__content{
+        flex-basis: 90vw;
+    }
+}
