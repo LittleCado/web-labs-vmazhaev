@@ -110,10 +110,11 @@ p {
 
 .first-page {
   height: 100vh;
-  background: #eea0ff;
-  background: -webkit-linear-gradient(45deg, #eea0ff 0%, #3ed1ee 100%);
-  background: -o-linear-gradient(45deg, #eea0ff 0%, #3ed1ee 100%);
-  background: linear-gradient(45deg, #eea0ff 0%, #3ed1ee 100%);
+  background: #eeb5fb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#eeb5fb), to(#3ed1ee));
+  background: -webkit-linear-gradient(bottom, #eeb5fb 0%, #3ed1ee 100%);
+  background: -o-linear-gradient(bottom, #eeb5fb 0%, #3ed1ee 100%);
+  background: linear-gradient(0deg, #eeb5fb 0%, #3ed1ee 100%);
 }
 
 .first-page__body {
@@ -133,10 +134,11 @@ p {
 
 .second-page {
   padding: 15vh 0;
-  background: #eea0ff;
-  background: -webkit-linear-gradient(315deg, #eea0ff 0%, #3ed1ee 100%);
-  background: -o-linear-gradient(315deg, #eea0ff 0%, #3ed1ee 100%);
-  background: linear-gradient(135deg, #eea0ff 0%, #3ed1ee 100%);
+  background: #eeb5fb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeb5fb), to(#3ed1ee));
+  background: -webkit-linear-gradient(top, #eeb5fb 0%, #3ed1ee 100%);
+  background: -o-linear-gradient(top, #eeb5fb 0%, #3ed1ee 100%);
+  background: linear-gradient(180deg, #eeb5fb 0%, #3ed1ee 100%);
 }
 
 .page__container {
@@ -175,12 +177,25 @@ p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.164);
   -ms-flex-preferred-size: 30%;
   flex-basis: 30%;
   overflow: hidden;
   min-width: 300px;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.page__content:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.315);
 }
 
 .page .content__image {
@@ -193,4 +208,18 @@ p {
 
 .page .content__text {
   margin: 0 10px 10px;
+}
+
+.third-page {
+  padding: 15vh 0;
+  background: #3ed1ee;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3ed1ee), to(#3eeeab));
+  background: -webkit-linear-gradient(top, #3ed1ee 0%, #3eeeab 100%);
+  background: -o-linear-gradient(top, #3ed1ee 0%, #3eeeab 100%);
+  background: linear-gradient(180deg, #3ed1ee 0%, #3eeeab 100%);
+}
+
+.third-page .content__image {
+  width: 150px;
+  margin-top: 20px;
 }
