@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@media (max-width: 799px) {
+  .page .page__content {
+    -ms-flex-preferred-size: 60vw;
+        flex-basis: 60vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .page .page__content {
+    -ms-flex-preferred-size: 90vw;
+        flex-basis: 90vw;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.first-page {
+  height: 100vh;
+  background: #eeb5fb;
+  background: -webkit-gradient(linear, left bottom, left top, from(#eeb5fb), to(#3ed1ee));
+  background: linear-gradient(0deg, #eeb5fb 0%, #3ed1ee 100%);
+}
+
+.first-page__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+  width: 80vw;
+}
+
+.second-page {
+  padding: 15vh 0;
+  background: #eeb5fb;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eeb5fb), to(#3ed1ee));
+  background: linear-gradient(180deg, #eeb5fb 0%, #3ed1ee 100%);
+}
+
+.page__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+}
+
+.page__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.page__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.164);
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  overflow: hidden;
+  min-width: 300px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin: 10px;
+}
+
+.page__content:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.315);
+}
+
+.page .content__image {
+  width: 100%;
+}
+
+.page .content__title {
+  margin-top: 30px;
+}
+
+.page .content__text {
+  margin: 0 10px 10px;
+}
+
+.third-page {
+  padding: 15vh 0;
+  background: #3ed1ee;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3ed1ee), to(#3eeeab));
+  background: linear-gradient(180deg, #3ed1ee 0%, #3eeeab 100%);
+}
+
+.third-page .content__image {
+  width: 150px;
+  margin-top: 20px;
+}

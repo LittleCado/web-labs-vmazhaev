@@ -1,0 +1,13 @@
+@media (max-width: 799px) {
+  .page .page__content {
+    -ms-flex-preferred-size: 60vw;
+        flex-basis: 60vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .page .page__content {
+    -ms-flex-preferred-size: 90vw;
+        flex-basis: 90vw;
+  }
+}

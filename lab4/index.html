@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Флористика</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    
+    <!-- sidebar -->
+    <div class="begin-page sidebar" id="sidebar">
+        <img src="img/close.svg" class="close-btn" onclick="show()">
+        <ul>
+            <li>Home</li>
+            <li>Works</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <!-- sidebar -->
+
+    <!-- First page -->
+    <div class="begin-page page1">
+
+        <div class="page1__header">
+            <a href="#"><img src="img/logo.svg" alt="logo"></a>
+            <div class="page1__menu" onclick="show()">
+                <img src="img/burger.svg" alt="menu icon">
+                <span class="page1__menu-text">меню</span>
+            </div>
+        </div>
+
+        <div class="page1__heading">
+            <h1>флористика <br> с душой</h1>
+        </div>
+
+        <div class="page1__instruments">
+            <div class="page1__social social">
+                <a class="social__item" href="#"><img src="img/social/inst.svg" alt=""></a>
+                <a class="social__item" href="#"><img src="img/social/fb.svg" alt=""></a>
+                <a class="social__item" href="#"><img src="img/social/whatsapp.svg" alt=""></a>
+                <a class="social__item" href="#"><img src="img/social/vk.svg" alt=""></a>
+            </div>
+            <div class="page1__watch-next">
+                <div class="page1__ button button-mid-transparent">смотреть работы</div>
+                <img src="img/mouse.svg" alt="">
+            </div>
+            <div class="page1__watch-catalog watch-catalog">
+                <a href="#">смотреть каталог</a>
+                <img class="watch-catalog__arrow" src="img/arrow.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- First page -->
+
 </body>
+<script src="scripts/sidebar.js"></script>
 </html>
