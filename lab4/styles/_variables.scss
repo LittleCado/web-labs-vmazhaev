@@ -2,10 +2,21 @@
 $font-stack: Forum;
 $font-size-button: 12px;
 $transition-time: .4s;
+$main-bgc: #3B181E;
 
 //for sidebar
 $font-size-sidebar: 35px;
 $font-size-sidebar-hover: 45px;
+$mobile-font-size-sidebar: 15px;
+$mobile-font-size-sidebar-hover: 25px;
 $nav-link: rgba(255, 255, 255, 0.5);
 $nav-link-hover: white;
 $transition-time: .4s;
+
+
+//fonts
+$h1-desktop: 120px;
+$h1-tablet: 70px;
+$h1-mobile: 30px;
+$h2-desktop: 30px;
+$h2-mobile: 20px;

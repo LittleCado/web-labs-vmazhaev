@@ -28,8 +28,12 @@ h1, h2{
 }
 
 h1{
-    font-size: 120px;
+    font-size: $h1-desktop;
 }
+h2{
+    font-size: $h2-desktop;
+}
+
 
 .button{
     font-size: $font-size-button;
@@ -56,17 +60,16 @@ h1{
 }
 
 
-// first page styles
+// first page styles //////////////////////////////
 .begin-page{
     padding: 90px 80px 0 80px;
     height: 100vh;
-    width: 100vw;
 }
 .page1{
     background-image: url(../img/bg.png);
     background-size: cover;
     background-position: center;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     @include flex(stretch, space-between, column);
     &__header{
         @include flex(center, space-between, row);
@@ -124,5 +127,37 @@ h1{
         height: 180px;
         writing-mode: vertical-lr;
         @include flex(center, space-between, row);
+    }
+}
+// first page styles //////////////////////////////
+
+.page2{
+    background-color: $main-bgc;
+    @include flex(center, space-between, column);
+    padding: 170px 10vw;
+    overflow: hidden;
+    &__header{
+        position: relative;
+        margin-bottom: 100px;
+        //white line under h2
+        &::after{
+            content: "";
+            display: block;
+            width: 85px;
+            height: 2px;
+            background-color: white;
+            margin-top: 25px;
+            margin-left: 70px;
+        }
+        &::before{
+            position: absolute;
+            width: 100vw;
+            left: -37vw;
+            bottom: -20vh;
+            content: "Каталог услуг";
+            text-transform: uppercase;
+            font-size: 13vw;
+            color: rgba(255, 255, 255, 0.05);
+        }
     }
 }
