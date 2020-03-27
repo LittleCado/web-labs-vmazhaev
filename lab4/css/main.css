@@ -200,6 +200,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 45px;
 }
 
+.slider {
+  max-width: 80%;
+  min-height: 50%;
+}
+
+.slider__item {
+  padding: 10px;
+  overflow: hidden;
+}
+
 body {
   color: white;
   font-family: Forum;
@@ -262,6 +272,7 @@ h1 {
 .begin-page {
   padding: 90px 80px 0 80px;
   height: 100vh;
+  width: 100vw;
 }
 
 .page1 {
