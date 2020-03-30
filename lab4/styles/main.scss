@@ -2,6 +2,7 @@
 @import "null_style";
 @import "sidebar";
 @import "slider";
+@import "responsive/responsive-slider";
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic');
 
 // mixins
@@ -71,6 +72,7 @@ h3{
     height: 100vh;
 }
 .page1{
+    overflow: hidden; //!Убрать//////////////////////////////////////////
     background-image: url(../img/bg.png);
     background-size: cover;
     background-position: center;

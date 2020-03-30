@@ -206,7 +206,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .slider__item {
-  max-width: 330px;
   min-height: 450px;
   margin: 10px;
   overflow: hidden;
@@ -261,6 +260,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider__link {
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .slider__linkbox {
+    height: 100%;
+  }
+  .slider__linkbox:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .slider__linkbox .button {
+    display: none;
+  }
+  .slider__link {
+    margin: 0;
+  }
 }
 
 body {
@@ -338,6 +352,7 @@ h3 {
 }
 
 .page1 {
+  overflow: hidden;
   background-image: url(../img/bg.png);
   background-size: cover;
   background-position: center;
