@@ -18,6 +18,7 @@ body{
     color: white;
     font-family: $font-stack;
     letter-spacing: 0.15em;
+    background-color: $main-bgc;
 }
 
 a{
@@ -33,6 +34,7 @@ h1{
 }
 h2{
     font-size: $h2-desktop;
+    line-height: 170%;
 }
 h3{
     font-size: $h3-desktop;
@@ -60,7 +62,7 @@ h3{
     background-color: rgba(0, 0, 0, 0.4);
     border: 1px solid white;
 }
-.button-non-tarnsparent{
+.button-non-transparent{
     background-color: rgba(0, 0, 0, 1);
     border: 1px solid transparent;
 }
@@ -140,7 +142,6 @@ h3{
 
 // second page styles //////////////////////////////
 .page2{
-    background-color: $main-bgc;
     @include flex(center, space-between, column);
     padding: 170px 10vw;
     overflow: hidden;
@@ -169,6 +170,37 @@ h3{
         }
     }
 }
-
-
 // second page styles //////////////////////////////
+
+// third page styles //////////////////////////////
+.page3{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    &__holder{
+        @include flex(center, space-around, row);
+        max-width: 1440px;
+    }
+    &__text-holder{
+        @include flex(flex-start, space-around, column);
+        width: $text-holder-width;
+        height: $text-holder-height;
+        line-height: 170%;
+    }
+    &__header{
+        //white line under h2
+        &::after{
+            content: "";
+            display: block;
+            width: 85px;
+            height: 2px;
+            background-color: white;
+            margin-top: 15px;
+        }
+    }
+    &__img{
+        width: 50%;
+        max-width: 690px;
+    }
+}
+// third page styles //////////////////////////////

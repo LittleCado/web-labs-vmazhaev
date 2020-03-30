@@ -281,6 +281,7 @@ body {
   color: white;
   font-family: Forum;
   letter-spacing: 0.15em;
+  background-color: #3B181E;
 }
 
 a {
@@ -297,6 +298,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  line-height: 170%;
 }
 
 h3 {
@@ -341,7 +343,7 @@ h3 {
   border: 1px solid white;
 }
 
-.button-non-tarnsparent {
+.button-non-transparent {
   background-color: black;
   border: 1px solid transparent;
 }
@@ -532,7 +534,6 @@ h3 {
 }
 
 .page2 {
-  background-color: #3B181E;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,4 +575,62 @@ h3 {
   text-transform: uppercase;
   font-size: 13vw;
   color: rgba(255, 255, 255, 0.05);
+}
+
+.page3 {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page3__holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1440px;
+}
+
+.page3__text-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 380px;
+  height: 380px;
+  line-height: 170%;
+}
+
+.page3__header::after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 2px;
+  background-color: white;
+  margin-top: 15px;
+}
+
+.page3__img {
+  width: 50%;
+  max-width: 690px;
 }
