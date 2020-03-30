@@ -2,7 +2,6 @@
 @import "null_style";
 @import "sidebar";
 @import "slider";
-@import "responsive/responsive-slider";
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic');
 
 // mixins
@@ -187,20 +186,19 @@ h3{
         height: $text-holder-height;
         line-height: 170%;
     }
-    &__header{
-        //white line under h2
-        &::after{
-            content: "";
-            display: block;
-            width: 85px;
-            height: 2px;
-            background-color: white;
-            margin-top: 15px;
-        }
+    &__line{
+        width: 85px;
+        height: 2px;
+        background-color: white;
     }
     &__img{
         width: 50%;
         max-width: 690px;
+        min-width: 365px;
     }
 }
 // third page styles //////////////////////////////
+
+
+@import "responsive/responsive-main";
+@import "responsive/responsive-slider";

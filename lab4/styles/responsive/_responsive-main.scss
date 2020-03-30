@@ -1,0 +1,17 @@
+@media (max-width: 1100px){
+    .page3{
+        &__holder{
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 100%;
+        }
+        &__text-holder{
+            text-align: center;
+            align-items: center;
+            width: 80%;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+}
