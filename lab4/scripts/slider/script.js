@@ -15,7 +15,7 @@ $(document).ready(function () {
           {
             breakpoint: 1000,
             settings: {
-              slidesToShow: 2,
+              slidesToShow:                                          2,
               dots: true
             }
           },

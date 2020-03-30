@@ -191,8 +191,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-bottom: 50px;
   color: rgba(255, 255, 255, 0.5);
-  -webkit-transition: ease .4s;
-  transition: ease .4s;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
 }
 
 .sidebar .nav__item:hover {
@@ -207,8 +207,60 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider__item {
   max-width: 330px;
+  min-height: 450px;
   margin: 10px;
   overflow: hidden;
+  position: relative;
+}
+
+.slider__linkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100% + 60px + 20px);
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+.slider__linkbox:hover {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider__number {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 20px;
+}
+
+.slider__number::after {
+  content: "";
+  display: block;
+  margin-left: 30px;
+  margin-top: -5px;
+  width: 70px;
+  height: 2px;
+  background-color: white;
+}
+
+.slider__link {
+  margin-bottom: 20px;
 }
 
 body {
@@ -231,6 +283,12 @@ h1 {
 
 h2 {
   font-size: 30px;
+}
+
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 170%;
 }
 
 .button {
