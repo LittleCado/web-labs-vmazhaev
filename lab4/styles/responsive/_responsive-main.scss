@@ -53,6 +53,14 @@
         }
     }
 
+    .page2{
+        &__header{
+            &::before{
+                display: none;
+            }
+        }
+    }
+
     .page3{
         &__holder{
             flex-direction: column-reverse;
