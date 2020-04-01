@@ -46,6 +46,7 @@ h3{
     font-size: $font-size-button;
     @include flex(center, center, row);
     padding: 20px 30px;
+    min-width: 190px;
     text-transform: uppercase;
     transition: $transition-time;
     &:hover{
@@ -82,10 +83,10 @@ h3{
 // first page styles //////////////////////////////
 .begin-page{
     padding: 90px 80px 0 80px;
-    height: 100vh;
+    min-height: 100vh;
 }
 .page1{
-    overflow: hidden; //!Убрать//////////////////////////////////////////
+   
     background-image: url(../img/bg.png);
     background-size: cover;
     background-position: center;
@@ -138,10 +139,11 @@ h3{
         }
     }
     &__watch-catalog{
-        width: 20px;
-        height: 180px;
         writing-mode: vertical-lr;
         @include flex(center, space-between, row);
+        span{
+            margin-bottom: 20px;
+        }
     }
 }
 // first page styles //////////////////////////////
@@ -201,7 +203,7 @@ h3{
     &__img{
         width: 50%;
         max-width: 690px;
-        min-width: 365px;
+        min-width: 320px;
     }
 }
 // third page styles //////////////////////////////
