@@ -66,6 +66,18 @@ h3{
     border: 1px solid transparent;
 }
 
+.social{
+    @include flex(center, space-between, column);
+    .social__item{
+        border-radius: 50%;
+        padding: 8px;
+        transition: $transition-time;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}
+
 
 // first page styles //////////////////////////////
 .begin-page{
@@ -105,14 +117,9 @@ h3{
         max-height: 300px;
     }
     &__social{
-        @include flex(center, space-between, column);
         .social__item{
-            margin-bottom: 10px;
-            border-radius: 5px;
-            transition: $transition-time;
             &:hover{
-                background-color: #3B181E;
-                transform: scale(1.05);
+                background-color: $instruments-hover-color;
             }
         }
     }

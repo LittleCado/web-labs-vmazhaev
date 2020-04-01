@@ -37,11 +37,8 @@
     bottom: 40px;
   }
   .social__item{
-    border-radius: 5px;
-    transition: $transition-time;
     &:hover{
-      background-color: rgba(189, 63, 63, 0.5);
-      transform: scale(1.05);
+      background-color: $sidebar-instruments-hover-color;
     }
   }
   &__heading{
