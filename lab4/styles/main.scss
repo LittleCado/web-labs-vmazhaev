@@ -1,5 +1,6 @@
 @import "variables";
 @import "null_style";
+@import "animation";
 @import "sidebar";
 @import "slider";
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic');
@@ -131,7 +132,8 @@ h3{
     &__mouse{
         @include flex(center, center, row);
         img{
-            transition: .2s;
+            transition: $transition-time;
+            animation: updown 2s ease infinite;
             border-radius: 17px;
             &:hover{
                 background-color: rgb(122, 122, 122);
@@ -143,6 +145,9 @@ h3{
         @include flex(center, space-between, row);
         span{
             margin-bottom: 20px;
+        }
+        .watch-catalog__arrow{
+            animation: updown2 1s ease infinite;
         }
     }
 }
