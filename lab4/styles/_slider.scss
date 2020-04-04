@@ -3,14 +3,13 @@
     max-width: 1400px;
 }
 
-.frame__slider{
+.page__slider{
     width: 40vw;
     max-width: 540px;
 }
 
 .slider{
     &__item{
-        
         min-height: $slider-item-height;
         margin: 10px;
         overflow: hidden;

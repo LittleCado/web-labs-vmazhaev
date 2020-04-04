@@ -57,5 +57,11 @@ $(document).ready(function () {
           }
         ]
       });
+
+
+      $('.page__slider').slick({
+        slidesToShow: 4,
+        infinite: true,    
+      });
     
 });

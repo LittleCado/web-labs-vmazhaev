@@ -7,17 +7,15 @@
         width: 90vw;
     }
     &__img{
+        background-image: url('../img/frame1/main-img.png');
+        background-size: cover;
+        background-position: center;
         position: absolute;
         left: 0;
         top: 0;
         width: 50vw;
         height: 100vh;
         z-index: -1;
-        overflow: hidden;
-
-        img{
-            height: 100%;
-        }
     }
     &__describing{
         @include flex(flex-start, center, column);
@@ -27,6 +25,7 @@
         flex-grow: 1;
     }
     .describing__container{
+        @include flex(flex-start, center, column);
         max-width: 570px;
     }
     &__service-naming{
@@ -42,5 +41,7 @@
         margin-bottom: 100px;
         max-width: 100px;
     }
-
+    &__footer{
+        display: none;
+    }
 }
