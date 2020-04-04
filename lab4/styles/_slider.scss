@@ -1,7 +1,14 @@
-
-.slider{
+.page2__slider{
     width: 80vw;
     max-width: 1400px;
+}
+
+.frame__slider{
+    width: 40vw;
+    max-width: 1400px;
+}
+
+.slider{
     &__item{
         
         min-height: $slider-item-height;

@@ -251,8 +251,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 45px;
 }
 
-.slider {
+.page2__slider {
   width: 80vw;
+  max-width: 1400px;
+}
+
+.frame__slider {
+  width: 40vw;
   max-width: 1400px;
 }
 
@@ -735,6 +740,74 @@ h3 {
   width: 50%;
   max-width: 690px;
   min-width: 320px;
+}
+
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: none;
+  padding-top: 80px;
+}
+
+.page__header {
+  width: 80vw;
+}
+
+.page__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.page__img img {
+  height: 100%;
+}
+
+.page__describing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 50vw;
+  padding-left: 50px;
+}
+
+.page__service-naming {
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+.page__text {
+  margin-bottom: 30px;
+}
+
+.page__button {
+  margin-bottom: 100px;
 }
 
 @media (max-width: 1100px) {

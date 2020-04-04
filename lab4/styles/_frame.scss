@@ -1,0 +1,38 @@
+.page{
+    @include flex(center, space-around, column);
+    background-image: none;
+    padding-top: 80px;
+    &__header{
+        width: 80vw;
+    }
+    &__img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        z-index: -1;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+        }
+    }
+    &__describing{
+        @include flex(flex-start, space-between, column);
+        align-self: flex-end;
+        width: 50vw;
+        padding-left: 50px;
+    }
+    &__service-naming{
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+    &__text{
+        margin-bottom: 30px;
+    }
+    &__button{
+        margin-bottom: 100px;
+    }
+
+}

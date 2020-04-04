@@ -4,6 +4,7 @@
 @import "sidebar";
 @import "slider";
 @import "footer";
+
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic');
 
 // mixins
@@ -213,7 +214,7 @@ h3{
     }
 }
 // third page styles //////////////////////////////
-
+@import "frame";
 
 @import "responsive/responsive-main";
 @import "responsive/responsive-slider";
