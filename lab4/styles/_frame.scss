@@ -1,9 +1,10 @@
 .page{
-    @include flex(center, space-around, column);
+    min-height: 100vh;
+    @include flex(center, center, column);
     background-image: none;
-    padding-top: 80px;
+    padding-top: 50px;
     &__header{
-        width: 80vw;
+        width: 90vw;
     }
     &__img{
         position: absolute;
@@ -19,10 +20,14 @@
         }
     }
     &__describing{
-        @include flex(flex-start, space-between, column);
+        @include flex(flex-start, center, column);
         align-self: flex-end;
+        padding: 0 50px;
         width: 50vw;
-        padding-left: 50px;
+        flex-grow: 1;
+    }
+    .describing__container{
+        max-width: 570px;
     }
     &__service-naming{
         margin-bottom: 50px;
@@ -30,9 +35,12 @@
     }
     &__text{
         margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 150%;
     }
     &__button{
         margin-bottom: 100px;
+        max-width: 100px;
     }
 
 }
