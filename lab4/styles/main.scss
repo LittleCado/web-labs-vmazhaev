@@ -20,6 +20,11 @@ body{
     background-color: $main-bgc;
 }
 
+*::selection{
+    background-color: #ffdfdf;
+    color: rgb(37, 5, 5);
+}
+
 a{
     color: white;
 }
