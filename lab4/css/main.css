@@ -144,6 +144,16 @@ body {
   background-color: #3B181E;
 }
 
+*::-moz-selection {
+  background-color: #ffdfdf;
+  color: #250505;
+}
+
+*::selection {
+  background-color: #ffdfdf;
+  color: #250505;
+}
+
 a {
   color: white;
 }
