@@ -2,9 +2,9 @@
     min-height: 100vh;
     @include flex(center, center, column);
     background-image: none;
-    padding-top: 50px;
     &__header{
         width: 90vw;
+        padding: 30px 0;
     }
     &__img{
         background-image: url('../img/frame1/main-img.png');
