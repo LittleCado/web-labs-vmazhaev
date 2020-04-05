@@ -130,7 +130,7 @@ h3{
         }
     }
     &__watch-next{
-        @include flex(strech, space-between, column);
+        @include flex(stretch, space-between, column);
         align-self: stretch;
     }
     &__mouse{
