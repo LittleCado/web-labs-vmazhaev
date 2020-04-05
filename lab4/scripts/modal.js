@@ -1,8 +1,11 @@
-//I'm using jQuery modal lib
+var modalBtn = document.querySelector('.modal-button');
+var modalBg = document.querySelector('.modal-bg');
+var modalClose = document.querySelector('.modal-close');
 
-$('a.page1__modal-button').click(function(event) {
-    $(this).modal({
-      fadeDuration: 250
-    });
-    return false;
-  });
+modalBtn.addEventListener('click', function(){
+  modalBg.classList.add('active');
+})
+
+modalClose.addEventListener('click', function(){
+  modalBg.classList.remove('active');
+})

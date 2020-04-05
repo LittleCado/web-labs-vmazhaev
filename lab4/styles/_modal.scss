@@ -6,12 +6,20 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     @include flex(center, center, row);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.4s;
+    &.active{
+        visibility: visible;
+        opacity: 1;
+    }
     .modal{
         background-color: $main-bgc;
         width: 60%;
         height: 50%;
         @include flex(center, center, row);
         overflow: hidden;
+        position: relative;
         .img{
             width: 50%;
             height: 100%;
@@ -33,5 +41,12 @@
                 font-size: $input-font-size;
             }
         }
+    }
+    .modal-close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 25px;
+        cursor: pointer;
     }
 } 

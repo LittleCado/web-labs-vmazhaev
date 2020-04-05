@@ -525,6 +525,15 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.4s;
+  transition: visibility 0s, opacity 0.4s;
+}
+
+.modal-bg.active {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-bg .modal {
@@ -545,6 +554,7 @@ h3 {
       -ms-flex-direction: row;
           flex-direction: row;
   overflow: hidden;
+  position: relative;
 }
 
 .modal-bg .modal .img {
@@ -582,6 +592,14 @@ h3 {
 .modal-bg .modal .holder input {
   padding: 18px 30px;
   font-size: 14px;
+}
+
+.modal-bg .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
 .sidebar {
@@ -1130,6 +1148,7 @@ h3 {
 @media (max-width: 820px) {
   .modal-bg .modal {
     width: 90%;
+    height: 60%;
     max-width: 370px;
   }
   .modal-bg .modal .img {
@@ -1137,5 +1156,6 @@ h3 {
   }
   .modal-bg .modal .holder {
     width: 100%;
+    margin-top: 30px;
   }
 }
