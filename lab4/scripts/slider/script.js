@@ -60,8 +60,22 @@ $(document).ready(function () {
 
 
       $('.page__slider').slick({
+        speed: 700,
         slidesToShow: 4,
-        infinite: true,    
+        slidesToScroll: 2,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 3,
+            }
+          }
+        ]
       });
     
 });

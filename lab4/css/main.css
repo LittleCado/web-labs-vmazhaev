@@ -859,6 +859,13 @@ h3 {
   }
   .page__slider {
     width: 100%;
+    max-width: unset;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .page .slider__img {
+    width: 20vw;
   }
   .page__button {
     margin-bottom: 30px;

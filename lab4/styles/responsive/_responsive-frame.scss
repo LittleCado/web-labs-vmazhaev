@@ -19,6 +19,11 @@
         }
         &__slider{
             width: 100%;
+            max-width: unset;
+            order: 0;
+        }
+        .slider__img{
+            width: 20vw;
         }
         &__button{
             margin-bottom: 30px;
