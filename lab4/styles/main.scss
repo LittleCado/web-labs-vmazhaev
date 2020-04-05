@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic');
 
+@import "variables";
+@import "null_style";
+@import "animation";
+
 // mixins
 @mixin flex ($align, $justify, $direction){
     display: flex;
@@ -7,14 +11,6 @@
     justify-content: $justify;
     flex-direction: $direction;
 }
-
-@import "variables";
-@import "null_style";
-@import "animation";
-@import "modal";
-@import "sidebar";
-@import "slider";
-@import "footer";
 
 //global styles
 body{
@@ -215,10 +211,17 @@ h3{
     }
 }
 // third page styles //////////////////////////////
-@import "frame";
-@import "responsive/responsive-frame";
 
+
+@import "modal";
+@import "sidebar";
+@import "slider";
+@import "footer";
+@import "frame";
+
+@import "responsive/responsive-frame";
 @import "responsive/responsive-main";
 @import "responsive/responsive-slider";
 @import "responsive/responsive-sidebar";
 @import "responsive/responsive-footer";
+@import "responsive/responsive-modal";
