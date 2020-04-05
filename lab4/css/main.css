@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*Обнуление*/
 @import url("https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic");
+/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -135,6 +135,85 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
   }
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.modal-bg .modal {
+  background-color: #3B181E;
+  width: 60%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+
+.modal-bg .modal .img {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img/call-img.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.modal-bg .modal .holder {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5%;
+}
+
+.modal-bg .modal .holder h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal-bg .modal .holder input {
+  padding: 18px 30px;
+  font-size: 14px;
 }
 
 .sidebar {

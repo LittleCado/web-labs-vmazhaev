@@ -55,7 +55,7 @@
                 <a class="social__item" href="#"><img src="img/social/vk.svg" alt=""></a>
             </div>
             <div class="page1__watch-next">
-                <a href="#" class="page1__ button button-mid-transparent">смотреть работы</a>
+                <a href="#page2" class="page1__button button button-mid-transparent scroller">смотреть работы</a>
                 <a href="#page2" class="page1__mouse scroller"><img src="img/mouse.svg" alt=""></a>
             </div>
             <a href="#page2" class="page1__watch-catalog watch-catalog scroller">
@@ -113,12 +113,26 @@
                 <h2 class="page3__header">акционные предложения</h2>
                 <div class="page3__line"></div>
                 <p>При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
-                <a href="#" class="button button-non-transparent">заказать оформление</a>
+                <a  href="#call" rel="modal:open" class="page1__modal-button button button-non-transparent">заказать оформление</a>
             </div>
             <img class="page3__img" src="img/page3.png" alt="">
         </div>
     </div>
     <!-- Third page -->
+
+    <!-- modal -->
+   <div class="modal-bg">
+        <div class="modal">
+            <div class="img"></div>
+            <div class="holder">
+                <h2>Оставьте свой номер и мы вам перезвоним!</h2>
+                <input type="text" id="name" placeholder="Имя">
+                <input type="text" id="phone" placeholder="Телефон">
+                <a href="" class="button button-non-transparent">позвоните мне</a>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
 
      <!-- Footer -->
     <footer class="footer">
@@ -143,5 +157,6 @@
 <script type="text/javascript" src="scripts/slider/slick.min.js"></script>
 <script src="scripts/slider/script.js"></script>
 <script src="scripts/sidebar.js"></script>
+<script src="scripts/modal.js"></script>
 <script src="scripts/anchor-smooth-scroll.js"></script>
 </html>

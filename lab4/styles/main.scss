@@ -1,10 +1,3 @@
-@import "variables";
-@import "null_style";
-@import "animation";
-@import "sidebar";
-@import "slider";
-@import "footer";
-
 @import url('https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic');
 
 // mixins
@@ -14,6 +7,14 @@
     justify-content: $justify;
     flex-direction: $direction;
 }
+
+@import "variables";
+@import "null_style";
+@import "animation";
+@import "modal";
+@import "sidebar";
+@import "slider";
+@import "footer";
 
 //global styles
 body{
