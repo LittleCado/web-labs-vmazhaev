@@ -882,6 +882,18 @@ h3 {
   }
 }
 
+@media (max-width: 620px) {
+  .page__service-naming {
+    font-size: 30px;
+  }
+  .page__describing {
+    padding: 0;
+  }
+  .page .slider__img {
+    width: unset;
+  }
+}
+
 @media (max-width: 1100px) {
   h1 {
     font-size: 70px;

@@ -36,3 +36,17 @@
         }
     }
 }
+
+@media (max-width: 620px){
+    .page{
+        &__service-naming{
+            font-size: 30px;
+        }
+        &__describing{
+            padding: 0;
+        }
+        .slider__img{
+            width: unset;
+        }
+    }
+}
