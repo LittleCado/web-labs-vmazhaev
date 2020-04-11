@@ -10,6 +10,7 @@
 @import'header';
 @import'page1';
 @import'page2';
+@import'page3';
 
 
 body{
@@ -38,5 +39,20 @@ body{
     &_black-border{
         color: black;
         border-color: black;
+    }
+}
+
+.intro{
+    @include flex(center, space between, column);
+    width: 50vw;
+    &__heading{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-size: 15px;
+        text-align: center;
+        line-height: 1.6em;
     }
 }

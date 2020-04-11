@@ -1,18 +1,4 @@
 .page2{
-    .intro{
-        @include flex(center, space between, column);
-        width: 50vw;
-        &__heading{
-            font-size: 30px;
-            font-weight: bold;
-            margin-bottom: 30px;
-        }
-        &__text{
-            font-size: 15px;
-            text-align: center;
-            line-height: 1.6em;
-        }
-    }
     &__features-block{
         @include flex(center, space-between, row);
         width: 80vw;
