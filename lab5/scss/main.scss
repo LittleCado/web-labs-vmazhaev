@@ -8,8 +8,33 @@
 
 @import'null_style';
 @import'header';
+@import'page1';
 
-.body{
+
+body{
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.page{
+    @include flex(center, space-evenly, column);
+}
+
+.button{
+    color: white;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 20px;
+    transition: .4s;
+    &:hover{
+        background-color: rgba(4, 216, 195, 0.37);
+    }
+    &_green-bg{
+        background-color: #00897B;
+        border-color: #00897B;
+    }
+    &_black-border{
+        color: black;
+        border-color: black;
+    }
 }
