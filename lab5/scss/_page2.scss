@@ -1,0 +1,45 @@
+.page2{
+    min-height: 100vh;
+    .intro{
+        @include flex(center, space between, column);
+        width: 50vw;
+        &__heading{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        &__text{
+            font-size: 15px;
+            text-align: center;
+            line-height: 1.6em;
+        }
+    }
+    &__features-block{
+        @include flex(center, space-between, row);
+        width: 80vw;
+    }
+    &__feature{
+        @include flex(center, space-between, column);
+        width: 30%;
+        transition: .4s;
+        padding: 10px;
+    }
+    .feature{
+        &__img{
+            margin-bottom: 30px;
+        }
+        &__heading{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        &__text{
+            text-align: center;
+            line-height: 1.6em;
+        }
+        &:hover{
+            background-color: rgba(4, 216, 195, 0.37);
+            width: 33%;
+        }
+    }
+}

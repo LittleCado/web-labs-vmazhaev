@@ -156,6 +156,96 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 20px;
 }
 
+.page2 {
+  min-height: 100vh;
+}
+
+.page2 .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space between;
+      -ms-flex-pack: space between;
+          justify-content: space between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+}
+
+.page2 .intro__heading {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.page2 .intro__text {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.page2__features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+}
+
+.page2__feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+  -webkit-transition: .4s;
+  transition: .4s;
+  padding: 10px;
+}
+
+.page2 .feature__img {
+  margin-bottom: 30px;
+}
+
+.page2 .feature__heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.page2 .feature__text {
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.page2 .feature:hover {
+  background-color: rgba(4, 216, 195, 0.37);
+  width: 33%;
+}
+
 body {
   background-color: #fff;
   font-family: Arial, Helvetica, sans-serif;
