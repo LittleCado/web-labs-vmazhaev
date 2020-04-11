@@ -19,6 +19,7 @@ body{
 
 .page{
     @include flex(center, space-evenly, column);
+    min-height: 100vh;
 }
 
 .button{

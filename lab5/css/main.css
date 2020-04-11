@@ -119,7 +119,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page1 {
-  min-height: 100vh;
   background-image: url(../img/page1-bg.png);
   background-size: cover;
   background-position: center;
@@ -154,10 +153,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .page1__button:first-child {
   margin-right: 20px;
-}
-
-.page2 {
-  min-height: 100vh;
 }
 
 .page2 .intro {
@@ -265,6 +260,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 100vh;
 }
 
 .button {
