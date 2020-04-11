@@ -1,1 +1,15 @@
+// mixins
+@mixin flex ($align, $justify, $direction){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
 @import'null_style';
+@import'header';
+
+.body{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}

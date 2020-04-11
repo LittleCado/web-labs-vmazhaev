@@ -1,0 +1,23 @@
+.header{
+    height: 120px;
+    @include flex(center, space-around, row);
+    background-color: #fff;
+    padding: 0 10vw;
+    &__link{
+        color: #212121;
+        font-size: 20px;
+        padding: 10px 20px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        transition: .4s;
+        &:hover{
+            border-color: #16273d;
+            box-shadow: 2px 3px 12px 0px rgba(50, 50, 50, 0.5);
+        }
+        &:first-child{
+            font-size: 25px;
+            flex-grow: 1;
+        }
+        
+    }
+}
