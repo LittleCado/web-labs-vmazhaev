@@ -15,9 +15,13 @@ body{
     transform-box: fill-box;
 }
 #man-bike{
-    animation: bike .8s ease-in-out infinite alternate;
+    animation: bike 1s ease-in-out infinite alternate;
     transform-origin: bottom;
-    
+}
+#cap{
+    animation: cap 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
 }
 
 @keyframes wheel{
@@ -35,5 +39,14 @@ body{
     }
     to{
         transform: rotateX(20deg);
+    }
+}
+
+@keyframes cap{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(40%);
     }
 }
