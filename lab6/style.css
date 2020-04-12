@@ -23,6 +23,9 @@ body{
     transform-origin: center;
     transform-box: fill-box;
 }
+#background{
+    animation: bg 3s ease-in-out infinite alternate;
+}
 
 @keyframes wheel{
     from{
@@ -48,5 +51,14 @@ body{
     }
     to{
         transform: translateY(40%);
+    }
+}
+
+@keyframes bg{
+    from{
+        transform: skewX(0deg);
+    }
+    to{
+        transform: skewX(5deg);
     }
 }
