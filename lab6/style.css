@@ -27,6 +27,27 @@ body{
     animation: bg 3s ease-in-out infinite alternate;
 }
 
+.leaf{
+    position: absolute;
+    width: 50px;
+    animation: leaf 2s ease-in infinite;
+    transform-origin: bottom;
+    transition: .4s linear;
+}
+.leaf:hover{
+    opacity: 0;
+}
+.leaf2{
+    animation-delay: -1s;
+    animation-duration: 1.7s;
+    top: 60px;
+}
+.leaf3{
+    animation-delay: -.5s;
+    animation-duration: 4s;
+    top: 120px;
+}
+
 @keyframes wheel{
     from{
         transform: rotateZ(360deg);
@@ -60,5 +81,16 @@ body{
     }
     to{
         transform: skewX(5deg);
+    }
+}
+
+@keyframes leaf{
+    from{
+        transform: rotateZ(360deg);
+        right: -10%;
+    }
+    to{
+        transform: rotateZ(0deg);
+        right: 100%;
     }
 }
