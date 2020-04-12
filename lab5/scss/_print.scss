@@ -1,0 +1,61 @@
+@media print{
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    p:first-line,
+    div:first-line{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+    }
+    .header{
+        &__link:first-child{
+            display: none;
+        }
+        &__link:after {
+            content: " (" attr(href) ")";
+        }
+    }
+    .page1{
+        min-height: 7cm;
+        &__buttons{
+            display: none;
+        }
+        &__heading{
+            font-size: 1.3cm;
+        }
+        &__text{
+            font-size: .5cm;
+            margin: 0;
+        }
+    }
+    .page2{
+        min-height: 14cm;
+        page-break-after: always;
+    }
+    .page3{
+        min-height: unset;
+        .intro{
+            &__text{
+                width: 17cm;
+            }
+        }
+        &__cards{
+            .card{
+                width: 7cm;
+                height: 6cm;
+                .button{
+                    display: none;
+                }
+                &__img{
+                    height: 1cm;
+                }
+                &__text{
+                    page-break-inside: avoid;
+                }
+            }
+        }
+    }
+}
+
