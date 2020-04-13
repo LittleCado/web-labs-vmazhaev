@@ -29,6 +29,7 @@ body{
     animation: bg 3s ease-in-out infinite alternate;
 }
 
+/* leaf ///////////////////////////////////*/
 .leaf{
     position: absolute;
     width: 50px;
@@ -49,6 +50,24 @@ body{
     animation-duration: 4s;
     top: 120px;
 }
+/* leaf ///////////////////////////////////*/
+
+/* stone ///////////////////////////////////*/
+.stone{
+    position: absolute;
+    animation: stone 2s linear infinite;
+}
+.stone1{
+    width: 100px;
+    top: 720px;
+}
+.stone2{
+    top: 685px;
+    width: 80px;
+    animation-delay: -.6s;
+}
+/* stone ///////////////////////////////////*/
+
 
 @keyframes wheel{
     from{
@@ -93,6 +112,15 @@ body{
     }
     to{
         transform: rotateZ(0deg);
+        right: 100%;
+    }
+}
+
+@keyframes stone{
+    from{
+        right: -10%;
+    }
+    to{
         right: 100%;
     }
 }
