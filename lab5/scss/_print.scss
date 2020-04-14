@@ -10,12 +10,7 @@
         box-shadow: none !important;
     }
     .header{
-        &__link:first-child{
-            display: none;
-        }
-        &__link:after {
-            content: " (" attr(href) ")";
-        }
+        display: none;
     }
     .page1{
         min-height: 7cm;
