@@ -370,11 +370,8 @@ body {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
-  .header__link:first-child {
+  .header {
     display: none;
-  }
-  .header__link:after {
-    content: " (" attr(href) ")";
   }
   .page1 {
     min-height: 7cm;
