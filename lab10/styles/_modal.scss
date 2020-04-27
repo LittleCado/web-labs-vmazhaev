@@ -33,7 +33,7 @@
             @include flex(stretch, space-evenly, column);
             padding: 0 5%;
             h2{
-                font-size: $h2-mobile;
+                font-size: map-get($font, h2-mobile);
                 text-align: center;
             }
             input{

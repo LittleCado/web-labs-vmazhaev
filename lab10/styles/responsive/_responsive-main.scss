@@ -1,6 +1,6 @@
 @media (max-width: 1100px){
     h1{
-        font-size: $h1-tablet;
+        font-size: map-get($font, h1-tablet);
     }
     .begin-page{
         padding: 40px 50px 0 50px;
@@ -80,7 +80,7 @@
 
 @media (max-width: 620px){
     h1{
-        font-size: $h1-mobile;
+        font-size: map-get($font, h1-mobile);
     }
     .begin-page{
         padding: 15px 30px 0 30px;

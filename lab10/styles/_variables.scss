@@ -6,13 +6,15 @@ $main-bgc: #3B181E;
 $instruments-hover-color: #3B181E;
 
 //fonts
-$h1-desktop: 120px;
-$h1-tablet: 70px;
-$h1-mobile: 40px;
-$h2-desktop: 30px;
-$h2-mobile: 20px;
-$h3-desktop: 16px;
-$h3-mobile: 16px;
+$font:(
+    h1-desktop: 120px,
+    h1-tablet: 70px,
+    h1-mobile:  40px,
+    h2-desktop: 30px,
+    h2-mobile: 20px,
+    h3-desktop: 16px,
+    h3-mobile: 16px
+);
 
 //for sidebar
 $font-size-sidebar: 35px;
