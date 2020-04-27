@@ -61,7 +61,7 @@ h3{
 }
 .button-transparent{
     background-color: rgba(0, 0, 0, 0.0);
-    border: 1px solid white;
+    border: 1px solid complement(rgb(255, 255, 255));
 }
 .button-mid-transparent{
     background-color: rgba(0, 0, 0, 0.4);
@@ -183,7 +183,7 @@ h3{
             content: "Каталог услуг";
             text-transform: uppercase;
             font-size: 13vw;
-            color: rgba(255, 255, 255, 0.05);
+            color: lighten($color: $main-bgc, $amount: 10%);
         }
     }
 }

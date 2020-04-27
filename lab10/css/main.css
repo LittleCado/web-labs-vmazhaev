@@ -196,6 +196,7 @@ h3 {
   min-width: 190px;
   text-transform: uppercase;
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -239,11 +240,13 @@ h3 {
   border-radius: 50%;
   padding: 8px;
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
 .social .social__item:hover {
   -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
 
@@ -377,6 +380,7 @@ h3 {
 
 .page1__mouse img {
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
   -webkit-animation: updown 2s ease infinite;
           animation: updown 2s ease infinite;
@@ -456,7 +460,7 @@ h3 {
   content: "Каталог услуг";
   text-transform: uppercase;
   font-size: 13vw;
-  color: rgba(255, 255, 255, 0.05);
+  color: #5f2730;
 }
 
 .page3 {
@@ -538,6 +542,7 @@ h3 {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 0s, opacity 0.4s;
+  -o-transition: visibility 0s, opacity 0.4s;
   transition: visibility 0s, opacity 0.4s;
 }
 
@@ -619,6 +624,7 @@ h3 {
   background: #3B181E;
   left: -100vw;
   -webkit-transition: ease 1s;
+  -o-transition: ease 1s;
   transition: ease 1s;
 }
 
@@ -680,12 +686,14 @@ h3 {
   border-radius: 5px;
   padding: 5px;
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
 .sidebar .close-btn:hover {
   background-color: rgba(189, 63, 63, 0.5);
   -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
           transform: scale(1.05);
 }
 
@@ -718,6 +726,7 @@ h3 {
   margin-bottom: 50px;
   color: rgba(255, 255, 255, 0.5);
   -webkit-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
   transition: ease 0.4s;
 }
 
@@ -764,6 +773,7 @@ h3 {
           flex-direction: column;
   height: calc(100% + 60px + 20px);
   -webkit-transition: ease 0.4s;
+  -o-transition: ease 0.4s;
   transition: ease 0.4s;
 }
 
@@ -831,6 +841,7 @@ h3 {
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
