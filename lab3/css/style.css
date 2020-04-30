@@ -125,6 +125,8 @@ p {
   height: 100vh;
   background: #eeb5fb;
   background: -webkit-gradient(linear, left bottom, left top, from(#eeb5fb), to(#3ed1ee));
+  background: -webkit-linear-gradient(bottom, #eeb5fb 0%, #3ed1ee 100%);
+  background: -o-linear-gradient(bottom, #eeb5fb 0%, #3ed1ee 100%);
   background: linear-gradient(0deg, #eeb5fb 0%, #3ed1ee 100%);
 }
 
@@ -147,6 +149,8 @@ p {
   padding: 15vh 0;
   background: #eeb5fb;
   background: -webkit-gradient(linear, left top, left bottom, from(#eeb5fb), to(#3ed1ee));
+  background: -webkit-linear-gradient(top, #eeb5fb 0%, #3ed1ee 100%);
+  background: -o-linear-gradient(top, #eeb5fb 0%, #3ed1ee 100%);
   background: linear-gradient(180deg, #eeb5fb 0%, #3ed1ee 100%);
 }
 
@@ -195,12 +199,14 @@ p {
   overflow: hidden;
   min-width: 300px;
   -webkit-transition: .4s;
+  -o-transition: .4s;
   transition: .4s;
   margin: 10px;
 }
 
 .page__content:hover {
   -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
           transform: scale(1.05);
   background-color: rgba(255, 255, 255, 0.315);
 }
@@ -221,6 +227,8 @@ p {
   padding: 15vh 0;
   background: #3ed1ee;
   background: -webkit-gradient(linear, left top, left bottom, from(#3ed1ee), to(#3eeeab));
+  background: -webkit-linear-gradient(top, #3ed1ee 0%, #3eeeab 100%);
+  background: -o-linear-gradient(top, #3ed1ee 0%, #3eeeab 100%);
   background: linear-gradient(180deg, #3ed1ee 0%, #3eeeab 100%);
 }
 

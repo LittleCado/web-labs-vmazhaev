@@ -177,7 +177,7 @@ h3 {
   line-height: 170%;
 }
 
-.button {
+.button, .button-transparent, .button-mid-transparent, .button-non-transparent {
   font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,7 +200,7 @@ h3 {
   transition: 0.4s;
 }
 
-.button:hover {
+.button:hover, .button-transparent:hover, .button-mid-transparent:hover, .button-non-transparent:hover {
   color: black;
   background-color: white;
 }
@@ -460,7 +460,7 @@ h3 {
   content: "Каталог услуг";
   text-transform: uppercase;
   font-size: 13vw;
-  color: rgba(255, 255, 255, 0.05);
+  color: #5f2730;
 }
 
 .page3 {
@@ -1121,7 +1121,7 @@ h3 {
   .slider__linkbox:hover {
     background-color: rgba(0, 0, 0, 0);
   }
-  .slider__linkbox .button {
+  .slider__linkbox .button, .slider__linkbox .button-transparent, .slider__linkbox .button-mid-transparent, .slider__linkbox .button-non-transparent {
     display: none;
   }
   .slider__link {
