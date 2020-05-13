@@ -1,70 +1,3 @@
-@charset "UTF-8";
-/*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-button {
-  background-color: transparent;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/*--------------------*/
 .header {
   height: 120px;
   display: -webkit-box;
@@ -131,12 +64,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page1__heading {
-  font-size: 60px;
   margin-bottom: 40px;
 }
 
 .page1__text {
-  font-size: 22px;
   margin-bottom: 80px;
 }
 
@@ -175,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  min-width: 30%;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
@@ -187,7 +118,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page2 .feature__heading {
-  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -227,8 +157,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page3 .card {
-  width: 370px;
-  height: 400px;
+  width: 20vw;
+  min-width: 370px;
+  min-height: 400px;
   margin-bottom: 30px;
   background-color: #fff;
   display: -webkit-box;
@@ -255,7 +186,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page3 .card__heading {
-  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -316,7 +246,6 @@ input {
   border: 1px solid black;
   width: 100%;
   margin-bottom: 20px;
-  font-size: 20px;
 }
 
 input[type="submit"] {
@@ -324,12 +253,14 @@ input[type="submit"] {
 }
 
 label {
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
-legend {
-  font-size: 30px;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -358,7 +289,6 @@ body {
   color: white;
   padding: 20px;
   border: 1px solid white;
-  font-size: 20px;
   -webkit-transition: .4s;
   -o-transition: .4s;
   transition: .4s;
@@ -400,13 +330,11 @@ body {
 }
 
 .intro__heading {
-  font-size: 30px;
   font-weight: bold;
   margin-bottom: 30px;
 }
 
 .intro__text {
-  font-size: 15px;
   text-align: center;
   line-height: 1.6em;
 }

@@ -5,7 +5,7 @@
     }
     &__feature{
         @include flex(center, space-between, column);
-        width: 30%;
+        min-width: 30%;
         transition: .4s;
         padding: 10px;
     }
@@ -14,7 +14,6 @@
             margin-bottom: 30px;
         }
         &__heading{
-            font-size: 20px;
             font-weight: bold;
             margin-bottom: 20px;
         }
