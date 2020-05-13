@@ -22,15 +22,10 @@ input{
     border: 1px solid black;
     width: 100%;
     margin-bottom: 20px;
-    font-size: 20px;
     &[type="submit"]{
         border-radius: 10px;
     }
 }
 label{
-    font-size: 20px;
     margin-bottom: 10px;
-}
-legend{
-    font-size: 30px;
 }
